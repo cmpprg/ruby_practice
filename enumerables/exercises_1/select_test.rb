@@ -81,7 +81,7 @@ class SelectTest < Minitest::Test
   end
 
   def test_pick_hashes
-    
+
     elements = ["cat", {:dog=>"fido"}, 23, {:stuff=>"things"}, "aimless", 43]
     hashes = elements.select do |element|
       element.class == Hash
